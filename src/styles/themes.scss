@@ -1,0 +1,61 @@
+
+@import 'resources';
+
+@include theme('light', $colors: (
+    primary: #24292E,
+    secondary: #F6F8FA,
+    tertiary: #3F4448,
+    back: #FFFFFF,
+    fontPrimary: #FFFFFF,
+    fontSecondary: #24292E
+)) using ($colors) {
+    .no-search {
+        svg {
+            fill: darken(map-get($colors, secondary), 10%);
+        }
+    }
+
+    .no-results {
+        svg {
+            path {
+                fill: darken(map-get($colors, secondary), 10%);
+            }
+        }
+    }
+
+    footer {
+        &, & a {
+            color: darken(map-get($colors, fontPrimary), 50%);
+        }
+
+        .bottom {
+            svg {
+                path {
+                    fill:  darken(map-get($colors, fontPrimary), 50%);
+                }
+            }
+        }
+    }
+};
+
+@include theme('dark', $colors: (
+    primary: #24292E,
+    secondary: #3a3a3b,
+    tertiary: #3F4448,
+    back: #111,
+    fontPrimary: #FFFFFF,
+    fontSecondary: #FFFFFF
+));
+
+@include theme('bubbly', $colors: (
+    primary: #944397,
+    secondary: #d19cd6,
+    tertiary: #535353,
+    back: #53005a,
+    fontPrimary: #ffffff,
+    fontSecondary: #ffd9f9
+)) using ($colors) {
+    * {
+        border-radius: 20px !important;
+    }
+}
