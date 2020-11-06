@@ -2,7 +2,7 @@
 Angular Github API Implementantion
 search multiple github profiles and get profile details with github api using angular , typescript 
 
-**Author**: Billy Chebkemoi
+**Author**: Billy Chepkemoi
 
 **Deployed app URL (hosting by Firebase)**: https://githubapi-da46f.web.app
 
