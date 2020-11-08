@@ -122,7 +122,12 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
         this.dropdownStates.set(key, !this.dropdownStates.get(key));
     }
 
-
+    /**
+     * Checks state for specified dropdown
+     * @param key dropdown key in dropwdownStates
+     * @param onlyMobile if dropdown is only mobile, state will be true if app is not in mobile state. This way
+     * the dropdown content is always "open" on no-mobile mode
+     */
     checkDropdownState(key: string, onlyMobile: boolean) {
         if (onlyMobile) {
             return (!this.isMobile || (this.isMobile) && this.dropdownStates.get(key));
