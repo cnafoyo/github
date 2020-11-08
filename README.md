@@ -10,7 +10,7 @@ Angular test app that consumes GitHub API to retrieve data. This project was gen
 
 ## Usage instructions
 
-Production app can be accesed on https://githubapi-da46f.web.app
+The website can be accesed on https://githubapi-da46f.web.app
 
 ### Search
 Use the search bar to search for users by their login name. The search is performed as you type
