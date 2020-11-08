@@ -43,8 +43,8 @@
     secondary: #3a3a3b,
     tertiary: #3F4448,
     back: #111,
-    fontPrimary: #FFFFFF,
-    fontSecondary: #FFFFFF
+    fontPrimary: white,
+    fontSecondary: white
 ));
 
 @include theme('bubbly', $colors: (
@@ -52,7 +52,7 @@
     secondary: #d19cd6,
     tertiary: #535353,
     back: #53005a,
-    fontPrimary: #ffffff,
+    fontPrimary: white,
     fontSecondary: #ffd9f9
 )) using ($colors) {
     * {
