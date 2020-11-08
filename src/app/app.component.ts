@@ -23,11 +23,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     @ViewChild('searchBox') searchBox?: ElementRef;
 
-    /**
-     * States for the different dropdown + button combos
-     * true: open
-     * false: closed
-     */
+
     dropdownStates: Map<string, boolean> = new Map([
         ['theme', false],
         ['search', false]
